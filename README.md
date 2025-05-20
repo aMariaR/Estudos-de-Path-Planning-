@@ -15,7 +15,7 @@ Para trabalhos futuros seria interessante comparar algumas variações de cada u
 
 Algoritmo usado pela equipe STOx’s na Robocup, o desempenho do algoritmo foi analisado usando métricas como a suavidade das trajetórias, a distância percorrida e o tempo de processamento, e o comparado com o algoritmo RRT.
 Pseudo-código:
-´´function FastPathPlanning (environment,trajectory,depth)
+`function FastPathPlanning (environment,trajectory,depth)  
 obstacle = trajectory.Collides(environment)
 if theres is an obstacle and depth < max_recursive then
 {
@@ -26,6 +26,6 @@ trajectory2=GenerateSegment(subgoal,trajectory.goal);
 trajectory2=FastPathPlanning(environment,trajectory2,depth+1);
 trajectory=JoinSegments(trajectory1,trajectory2);
 }
-return trajectory;´
+return trajectory;`
 
 
